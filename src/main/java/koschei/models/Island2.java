@@ -1,7 +1,11 @@
 package koschei.models;
 
-public class Island2 {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+
+public class Island2 {
+    @Autowired
     private Wood3 wood;
 
     public Island2(Wood3 wood) {
@@ -9,6 +13,7 @@ public class Island2 {
     }
 
     @Override
+
     public String toString() {
         return ", на острове дерево " + wood.toString();
     }
